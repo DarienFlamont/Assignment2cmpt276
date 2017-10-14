@@ -69,6 +69,12 @@ class EnrollsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def enroll_params
+      foundStudent = Student.find(student_id)
+      foundCourse = Course.find(course_id)
+
+      @enroll.student_id = foundStudent.id  # set the enroll foreign keys to the primary keys of the queries tables.
+      @enroll.course_id = foundCourse.id
+
       params.require(:enroll).permit(:student_id, :course_id, :percentage, :lettergrade)
     end
 end

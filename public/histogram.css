@@ -30,6 +30,10 @@
 		overflow: hidden;
 		font-weight: bold;
 	}
+	button{
+		margin-left: 120px;
+		margin-top: 50px;
+	}
 	textarea2{
 		border: 1px solid #eff6f9;
 		width: 400px;
