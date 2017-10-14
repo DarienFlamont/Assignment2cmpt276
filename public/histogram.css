@@ -1,0 +1,44 @@
+/*HistoStylePage*/
+	lowerbound {color: red; font-weight: bold; font-family: "Times New Roman", Georgia, Serif; font-size:35px; padding-left:20px; }
+
+	histogram {color: red; font-weight: bold; font-family: "Times New Roman", Georgia, Serif; font-size:35px;}
+
+	h1 {font-size:40px; font-weight: 500; padding-top: 20px; padding-left: 20px; font-family:"Helvetica";}
+
+	p { font-family: "Times New Roman", Georgia, Serif; font-size:25px; font-weight:bold;}
+
+	.HistoLetters {padding-left: 45px; padding-top: 20px;}
+
+	.col-sm-6 {border: solid lightsteelblue; background-color: #eff6f9; border-width:thin; border-radius:5px; margin-top: 40px; margin-left: 60px; padding-top: 20px; padding-bottom: 40px;}
+	
+	.col-sm-4 {margin-top: 40px; border: solid lightsteelblue; background-color: #eff6f9; border-width:thin; border-radius:5px; margin-left: 50px; padding-left: 20px; margin-bottom: 400px; padding-top: 20px;}
+
+	.col-3 {margin-top: 30px;}
+
+	.col-4 {margin-left: 60px; margin-top: 30px;}
+
+	.col-5 {margin-left: 50px; margin-top:10px;}
+
+	textarea{
+		border: 1px solid lightblue;
+		width: 150px;
+		height: 50px;
+		text-align: center;
+		line-height: 3;
+		font-size: 15px;
+		resize: none;	
+		overflow: hidden;
+		font-weight: bold;
+	}
+	textarea2{
+		border: 1px solid #eff6f9;
+		width: 400px;
+		height: 50px;
+		text-align: center;
+		line-height: 3;
+		font-size: 13px;
+		resize: none;	
+		padding-bottom: 50px;
+		margin-right: 50px
+
+	}

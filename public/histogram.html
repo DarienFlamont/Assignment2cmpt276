@@ -1,0 +1,266 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="./histogram.css">
+
+	<title>
+		Histogram Generator
+	</title>
+
+
+
+	
+</head>
+
+
+<body>
+	<script src="./calculate.js"></script>
+
+
+
+	<h1>Histogram Generator</h1>
+		<div class="row">
+			<div class="col-sm-6">
+					<lowerbound>Lower bounds</lowerbound>
+
+				<div class="row">
+					<div class="col-4">
+						<p>Max</p>
+					</div>
+					<div class="col-3">
+						<textarea id="Max" onkeyup="calculate()" autocomplete=off>100.00</textarea>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4">
+						<p>A+</p>
+					</div>
+					<div class="col-3">
+						<textarea id="A+" onkeyup="calculate()" autocomplete=off>95.00</textarea>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4">
+						<p>A</p>
+					</div>
+					<div class="col-3">
+						<textarea id="A" onkeyup="calculate()" autocomplete=off>90.00</textarea>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4">
+						<p>A-</p>
+					</div>
+					<div class="col-3">
+						<textarea id="A-" onkeyup="calculate()" autocomplete=off>85.00</textarea>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4">
+						<p>B+</p>
+					</div>
+					<div class="col-3">
+						<textarea id="B+" onkeyup="calculate()" autocomplete=off>80.00</textarea>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4">
+						<p>B</p>
+					</div>
+					<div class="col-3">
+						<textarea id="B" onkeyup="calculate()" autocomplete=off>75.00</textarea>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4">
+						<p>B-</p>
+					</div>
+					<div class="col-3">
+						<textarea id="B-" onkeyup="calculate()" autocomplete=off>70.00</textarea>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4">
+						<p>C+</p>
+					</div>
+					<div class="col-3">
+						<textarea id="C+" onkeyup="calculate()" autocomplete=off>65.00</textarea>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4">
+						<p>C</p>
+					</div>
+					<div class="col-3">
+						<textarea id="C" onkeyup="calculate()" autocomplete=off>60.00</textarea>
+					</div>
+				</div>
+
+				<div class="row">					
+					<div class="col-4">
+						<p>C-</p>
+					</div>
+					<div class="col-3">
+						<textarea id="C-" onkeyup="calculate()" autocomplete=off>55.00</textarea>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4">
+						<p>D</p>
+					</div>
+					<div class="col-3">
+						<textarea id="D" onkeyup="calculate()" autocomplete=off>50.00</textarea>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-4">
+						<p>F</p>
+					</div>
+					<div class="col-3">
+						<textarea id="F" onkeyup="calculate()" autocomplete=off>0.00</textarea>
+					</div>
+				</div>
+					
+			</div>
+		
+
+			<div class="col-sm-4">
+				<histogram>Histogram</histogram>
+						<div class="HistoLetters">
+
+							<div class="row">
+							<div class="col-2">
+							<p>A+
+							</div>
+							<div class="col-5">
+								<div id = "Hist1"> </div>
+							</div>
+							</p>
+							</div>
+
+							<div class="row">
+							<div class="col-2">
+							<p>A
+							</div>
+							<div class="col-5">
+								<div id = "Hist2"> </div>
+							</div>
+							</p>
+							</div>
+
+							<div class="row">
+							<div class="col-2">
+							<p>A-
+							</div>
+							<div class="col-5">
+								<div id = "Hist3"> </div>
+							</div>
+							</p>
+							</div>
+
+							<div class="row">
+							<div class="col-2">
+							<p>B+
+							</div>
+							<div class="col-5">
+								<div id = "Hist4"> </div>
+							</div>
+							</p>
+							</div>
+
+							<div class="row">
+							<div class="col-2">
+							<p>B
+							</div>
+							<div class="col-5">
+								<div id = "Hist5"> </div>
+							</div>
+							</p>
+							</div>
+
+							<div class="row">
+							<div class="col-2">
+							<p>B-
+							</div>
+							<div class="col-5">
+								<div id = "Hist6"> </div>
+							</div>
+							</p>
+							</div>
+
+							<div class="row">
+							<div class="col-2">
+							<p>C+
+							</div>
+							<div class="col-5">
+								<div id = "Hist7"> </div>
+							</div>
+							</p>
+							</div>
+
+							<div class="row">
+							<div class="col-2">
+							<p>C
+							</div>
+							<div class="col-5">
+								<div id = "Hist8"> </div>
+							</div>
+							</p>
+							</div>
+
+							<div class="row">
+							<div class="col-2">
+							<p>C-
+							</div>
+							<div class="col-5">
+								<div id = "Hist9"> </div>
+							</div>
+							</p>
+							</div>
+
+							<div class="row">
+							<div class="col-2">
+							<p>D						
+							</div>
+							<div class="col-5">
+								<div id = "Hist10"> </div>
+							</div>
+							</p>
+							</div>
+
+							<div class="row">
+							<div class="col-2">
+							<p>F
+							</div>
+							<div class="col-5">
+								<div id = "Hist11"> </div>
+							</div>
+							</p>
+							</div>
+
+							<div class="row">
+							
+							<textarea2 id = "Errors" autocomplete=off>Errors will show here</textarea2>
+				
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+	<script src="./calculate.js"></script>
+	
+	</body>
+</html>

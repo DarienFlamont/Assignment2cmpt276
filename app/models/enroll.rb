@@ -1,4 +1,4 @@
 class Enroll < ApplicationRecord
-	belongs_to :students
-	belongs_to :courses
+	belongs_to :students, optional: true
+	belongs_to :courses, optional: true
 end
