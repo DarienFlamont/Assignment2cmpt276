@@ -1,4 +1,7 @@
 class Enroll < ApplicationRecord
-	belongs_to :students, optional: true
-	belongs_to :courses, optional: true
+	validates :course_id, presence:true
+	validates :student_id, presence: true
+
+	belongs_to :student
+	belongs_to :course
 end

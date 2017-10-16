@@ -24,7 +24,13 @@ class EnrollsController < ApplicationController
   # POST /enrolls
   # POST /enrolls.json
   def create
-    @enroll = Enroll.new(enroll_params)
+
+    # hacking our way around the enroll params but getting the student_id param from the database and assigning it the true id (i.e. index)
+    new_params = enroll_params
+    new_params[:student_id] = Student.find_by(student_id:new_params[:student_id])&.id
+    new_params[:course_id] = Course.find_by(course_id:new_params[:course_id])&.id
+
+    @enroll = Enroll.new(new_params)
 
     respond_to do |format|
       if @enroll.save

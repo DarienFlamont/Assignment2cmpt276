@@ -3,8 +3,6 @@ Rails.application.routes.draw do
   resources :courses
   resources :students
 
-  match    ':controller(/:action(/:id))',    :via    =>    :get
-  match    ':controller(/:action(/:id))',    :via    =>    :post
 
   root 'courses#index'
   get '/histo', :to => 'application#histo'
