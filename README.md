@@ -1,24 +1,12 @@
-# README
+# CMPT 276 Assignment 2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Ruby on Rails web app
 
-Things you may want to cover:
+### Download Source Code
 
-* Ruby version
+`git clone https://github.com/DarienFlamont/Assignment2cmpt276.git`
 
-* System dependencies
+### Run Server
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Unix: `bin/rails server`
+Windows: `ruby bin\rails server`
