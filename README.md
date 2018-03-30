@@ -1,6 +1,6 @@
 # CMPT 276 Assignment 2
 
-This is a Ruby on Rails web app
+A Ruby on Rails app to generate dynamic histograms using classroom data.
 
 ### Download Source Code
 
